@@ -18,13 +18,16 @@ window.addEventListener('load', function() {
 	// you want to disable. This is how each ToDo question will be evaluated.
 
 	///////////////////////////////////////////////////////////////////////
-	//    ToDo 1: Modify these lines to answer the points i, ii and iii   //
+	//    ToDo 1: Modify these lines to answer the points i and ii        //
 	// You can also modify the function signature (parameters), if needed //
 	///////////////////////////////////////////////////////////////////////
 	fg_ctx.globalAlpha = alpha;
 	fg_ctx.globalCompositeOperation = 'lighter';
-
 	fg_ctx.beginPath();
+	    
+	///////////////////////////////////////////////////////////////////////
+	//                           Cloud example                           //
+	///////////////////////////////////////////////////////////////////////	    
 	fg_ctx.moveTo(startX, startY);
 	fg_ctx.bezierCurveTo(startX - 40, startY + 20, startX -40, startY + 70, startX + 60, startY + 70);
 	fg_ctx.bezierCurveTo(startX + 80, startY + 100, startX + 150, startY + 100, startX + 170, startY + 70);
@@ -32,8 +35,6 @@ window.addEventListener('load', function() {
 	fg_ctx.bezierCurveTo(startX + 260, startY -40, startX + 200, startY -50, startX + 170, startY - 30);
 	fg_ctx.bezierCurveTo(startX + 150, startY -75, startX + 80, startY -60, startX + 80, startY - 30);
 	fg_ctx.bezierCurveTo(startX + 30, startY -75, startX -20, startY -60, startX, startY);
-
-	fg_ctx.fillStyle = '#ffffff';
 
 	///////////////////////////////////////////////////////////////////////
 	//             ToDo 2.i: Custom cloud using bezierCurveTo            //
@@ -45,9 +46,14 @@ window.addEventListener('load', function() {
 	//           ToDo 2.ii: Custom could using quadraticCurveTo           //
 	///////////////////////////////////////////////////////////////////////
 	// Add your code here
-
-
+	   
+	    
+	///////////////////////////////////////////////////////////////////////
+	//         ToDo 1.iii Modify these lines to change the colour        //
+	///////////////////////////////////////////////////////////////////////
+	fg_ctx.fillStyle = '#ffffff';
 	fg_ctx.fill();
+	fg_ctx.stroke();
     }
 
     function drawBackground(width, height) {
