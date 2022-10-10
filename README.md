@@ -85,7 +85,7 @@ Here we will use the window property devicePixelRatio that “returns the ratio 
    ```js
 	let numClouds = 10;
 
-	for (let i = 1; i < numClouds; i++) {
+	for (let i = 1; i <= numClouds; i++) {
 	    drawCloud(100 * i , 50 * i + 120 , i / numClouds);
 	}
    ```
